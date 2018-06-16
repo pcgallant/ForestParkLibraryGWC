@@ -17,34 +17,44 @@ background.bgpic("muahaha.jpg")
 
 Mark = turtle.Turtle()
 Mark.shape("turtle")
-Boy1 = turtle.Turtle()
-Boy1.shape("mr. who.jpg")
-#Boy1.color("green")
+boy1 = turtle.Turtle()
+
+background.addshape("sneakers.jpg")
+background.addshape("converse lady 200.gif")
+
+boy1.shape("sneakers.jpg")
+#boy1.shape("mr. who.jpg")
+boy1.color("green")
 Girl1 = turtle.Turtle()
-Girl1.shape("circle")
+Girl1.shape("converse lady 200.gif")
 Suki = turtle.Turtle()
 
+background.addshape("boom chicka chicka3.jpg")
+Boy2 = turtle.Turtle()
+Boy2.shape("boom chicka chicka3.jpg")
+Boy2.right(269)
 Suki.shape("triangle")
 
 Mark.penup()
 Mark.goto(-320,100)
-Boy1.penup()
-Boy1.goto(100,100)
+boy1.penup()
+boy1.goto(30,-100)
 Girl1.penup()
-Girl1.goto(50,0)
+Girl1.goto(100,-100)
 GirlVoice = turtle.Turtle()
 GirlVoice.shape("circle")
 GirlVoice.color("red")
 GirlVoice.hideturtle()
 Suki.penup()
 Suki.goto(-50,50)
+Boy2.goto(5,-100)
 
 GirlVoice.penup()
 GirlVoice.goto(90,0)
 GirlVoice.write("Oh, this is Suki, ")
 GirlVoice.goto(90,-10)
 GirlVoice.write("she's new to school.")
-Boy1.write("Oh look an asian ching-chong!")
+boy1.write("Oh look an asian ching-chong!")
 
 print("You are Mark, what do you do?")
 print("A: Join in laughter")
@@ -52,7 +62,7 @@ print("B: Defend Suki")
 
 Level1_Choice = input()
 print Level1_Choice
-if Level1_Choice == "A" or "a":
+if Level1_Choice == "A":
   Mark.write("Ha ha ha ha ha")
 
 if Level1_Choice == "B":
@@ -63,4 +73,6 @@ elif input != "A" :
 
 elif input != "B" :
   print ("Error")
+  
+
 
